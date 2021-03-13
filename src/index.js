@@ -1,30 +1,27 @@
 
 exports.min = function min (array) {
-  min=array[0];
-  for (let i=0; i< array.length; i++) {
-    if(min>array[i]){
-      min=array[i]
-    }
+  if (!array || array.length==0){return 0}
+  else{
+    return min=Math.min.apply(null, array)
   }
-
 }
 
 exports.max = function max (array) {
-  max=0;
-  for (let i=0; i< array.length; i++) {
-    if(max<array[i]){
-      max=array[i]
-    }
-  }
-
   
+  if (!array || array.length==0){return 0}
+  else{
+    return max=Math.max.apply(null, array)
+  }
 }
 
 exports.avg = function avg (array) {
-  let x;
-  for (let i=0; i< array.length; i++) {
-    x+=array[i];
+  if (!array || array.length==0){return 0}
+  else{
+    let x=0;
+    for (let i=0; i< array.length; i++) {
+      x+=array[i];
+    }
+    return y=x/array.length
   }
-
 }
-console.log('hello from Node.js')
+
