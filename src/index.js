@@ -1,9 +1,9 @@
 
 exports.min = function min (array) {
-  min=arr[0];
+  min=array[0];
   for (let i=0; i< array.length; i++) {
-    if(min>arr[i]){
-      min=arr[i]
+    if(min>array[i]){
+      min=array[i]
     }
   }
 
@@ -12,8 +12,8 @@ exports.min = function min (array) {
 exports.max = function max (array) {
   max=0;
   for (let i=0; i< array.length; i++) {
-    if(max<arr[i]){
-      max=arr[i]
+    if(max<array[i]){
+      max=array[i]
     }
   }
 
@@ -23,7 +23,8 @@ exports.max = function max (array) {
 exports.avg = function avg (array) {
   let x;
   for (let i=0; i< array.length; i++) {
-    x+=arr[i];
+    x+=array[i];
   }
 
 }
+console.log('hello from Node.js')
